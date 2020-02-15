@@ -43,9 +43,11 @@ public class Login extends AppCompatActivity {
                             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                                 if (task.isSuccessful()) {
                                     for (QueryDocumentSnapshot document : task.getResult()) {
-                                        Log.d("GDQUID", "DocumentSnapshot successfully updated!"+document.getData());
-                                        String name=document.getString("Name");
-                                        Intent myIntent = new Intent(getBaseContext(), MainActivity.class);
+                                        Log.d("GDQUID", "DocumentSnapshot successfully updated!"+document.getString("Password"));
+                                        String name=document.getString("Password");
+                                        Toast toast = Toast.makeText(getApplicationContext(),name,Toast.LENGTH_SHORT);
+                                        toast.show();
+                                        Intent myIntent = new Intent(getBaseContext(), bulkUI.class);
                                         startActivity(myIntent);
                                 }
 
@@ -54,7 +56,6 @@ public class Login extends AppCompatActivity {
                                 }
                             }
                         });
-
 
 
             }
