@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "471329654014",
+    "firebase_url": "https://gqbulk.firebaseio.com",
+    "project_id": "gqbulk",
+    "storage_bucket": "gqbulk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471329654014:android:cfcfe0f10ef14cf336d1af",
+        "android_client_info": {
+          "package_name": "com.example.gqbulk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471329654014-d9kgsma471cskrr1nsjso2kme5hgkhse.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH9RXBBFqL38bil_BTos0CzTKlU4j0ORI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471329654014-d9kgsma471cskrr1nsjso2kme5hgkhse.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
