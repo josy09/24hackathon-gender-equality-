@@ -25,15 +25,23 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.gqbulk.bulkUI" />
-        <activity android:name="com.example.gqbulk.Login" />
-        <activity android:name="com.example.gqbulk.MainActivity" >
+        <activity android:name="com.example.gqbulk.promotionItemAdapter" />
+        <activity android:name="com.example.gqbulk.promotions" />
+        <activity
+            android:name="com.example.gqbulk.SplashScreen"
+            android:theme="@style/SplashScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.gqbulk.Login"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.example.gqbulk.MainActivity" />
+        <activity android:name="com.example.gqbulk.HomePage" />
+        <activity android:name="com.example.gqbulk.bulkUI" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

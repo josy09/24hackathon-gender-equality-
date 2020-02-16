@@ -20,7 +20,7 @@
 14-->[com.google.firebase:firebase-firestore:21.4.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\61355ec616f0eb2668a126a30592a1de\jetified-firebase-firestore-21.4.0\AndroidManifest.xml:14:22-64
 15
 16    <application
-16-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:5:5-21:19
+16-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:5:5-29:19
 17        android:name="androidx.multidex.MultiDexApplication"
 18        android:allowBackup="true"
 18-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:6:9-35
@@ -38,69 +38,87 @@
 25        android:testOnly="true"
 26        android:theme="@style/AppTheme" >
 26-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:11:9-40
-27        <activity android:name="com.example.gqbulk.bulkUI" />
-27-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:12:9-53
-27-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:12:19-41
-28        <activity android:name="com.example.gqbulk.Login" />
-28-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:13:9-43
-28-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:13:19-40
-29        <activity android:name="com.example.gqbulk.MainActivity" >
-29-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:14:9-20:20
-29-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:14:19-47
-30            <intent-filter>
-30-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:15:13-19:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:16:17-69
-31-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:16:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:18:17-77
-33-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:18:27-74
-34            </intent-filter>
-35        </activity>
-36
-37        <service
-37-->[com.google.firebase:firebase-firestore:21.4.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\61355ec616f0eb2668a126a30592a1de\jetified-firebase-firestore-21.4.0\AndroidManifest.xml:17:9-23:19
-38            android:name="com.google.firebase.components.ComponentDiscoveryService"
-38-->[com.google.firebase:firebase-firestore:21.4.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\61355ec616f0eb2668a126a30592a1de\jetified-firebase-firestore-21.4.0\AndroidManifest.xml:18:13-84
-39            android:directBootAware="true"
-39-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\0a74bbc0170d0aacd5803552d3843462\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-40            android:exported="false" >
-40-->[com.google.firebase:firebase-firestore:21.4.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\61355ec616f0eb2668a126a30592a1de\jetified-firebase-firestore-21.4.0\AndroidManifest.xml:19:13-37
-41            <meta-data
-41-->[com.google.firebase:firebase-firestore:21.4.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\61355ec616f0eb2668a126a30592a1de\jetified-firebase-firestore-21.4.0\AndroidManifest.xml:20:13-22:85
-42                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-42-->[com.google.firebase:firebase-firestore:21.4.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\61355ec616f0eb2668a126a30592a1de\jetified-firebase-firestore-21.4.0\AndroidManifest.xml:21:17-111
-43                android:value="com.google.firebase.components.ComponentRegistrar" />
-43-->[com.google.firebase:firebase-firestore:21.4.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\61355ec616f0eb2668a126a30592a1de\jetified-firebase-firestore-21.4.0\AndroidManifest.xml:22:17-82
-44        </service>
-45
-46        <activity
-46-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\b40e8a8611b735163d3bb330b22a1aa3\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-47            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-47-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\b40e8a8611b735163d3bb330b22a1aa3\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-48            android:exported="false"
-48-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\b40e8a8611b735163d3bb330b22a1aa3\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-49            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-49-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\b40e8a8611b735163d3bb330b22a1aa3\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-50
-51        <provider
-51-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\0a74bbc0170d0aacd5803552d3843462\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-52            android:name="com.google.firebase.provider.FirebaseInitProvider"
-52-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\0a74bbc0170d0aacd5803552d3843462\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-53            android:authorities="com.example.gqbulk.firebaseinitprovider"
-53-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\0a74bbc0170d0aacd5803552d3843462\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-54            android:exported="false"
-54-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\0a74bbc0170d0aacd5803552d3843462\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-55            android:initOrder="100" />
-55-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\0a74bbc0170d0aacd5803552d3843462\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-56
-57        <meta-data
-57-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\c327a25527fe8ad932a73f8c660c7639\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-58            android:name="com.google.android.gms.version"
-58-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\c327a25527fe8ad932a73f8c660c7639\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-59            android:value="@integer/google_play_services_version" />
-59-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\c327a25527fe8ad932a73f8c660c7639\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-60    </application>
-61
-62</manifest>
+27        <activity android:name="com.example.gqbulk.promotionItemAdapter" />
+27-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:12:9-67
+27-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:12:19-55
+28        <activity android:name="com.example.gqbulk.promotions" />
+28-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:13:9-48
+28-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:13:19-45
+29        <activity
+29-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:14:9-22:20
+30            android:name="com.example.gqbulk.SplashScreen"
+30-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:15:13-41
+31            android:theme="@style/SplashScreen" >
+31-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:16:13-48
+32            <intent-filter>
+32-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:17:13-21:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:18:17-69
+33-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:18:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:20:17-77
+35-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:20:27-74
+36            </intent-filter>
+37        </activity>
+38        <activity
+38-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:23:9-25:47
+39            android:name="com.example.gqbulk.Login"
+39-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:24:13-34
+40            android:theme="@style/AppTheme" />
+40-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:25:13-44
+41        <activity android:name="com.example.gqbulk.MainActivity" />
+41-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:26:9-50
+41-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:26:19-47
+42        <activity android:name="com.example.gqbulk.HomePage" />
+42-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:27:9-46
+42-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:27:19-43
+43        <activity android:name="com.example.gqbulk.bulkUI" />
+43-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:28:9-44
+43-->D:\Hackathon\GQBulk\app\src\main\AndroidManifest.xml:28:19-41
+44
+45        <service
+45-->[com.google.firebase:firebase-firestore:21.4.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\61355ec616f0eb2668a126a30592a1de\jetified-firebase-firestore-21.4.0\AndroidManifest.xml:17:9-23:19
+46            android:name="com.google.firebase.components.ComponentDiscoveryService"
+46-->[com.google.firebase:firebase-firestore:21.4.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\61355ec616f0eb2668a126a30592a1de\jetified-firebase-firestore-21.4.0\AndroidManifest.xml:18:13-84
+47            android:directBootAware="true"
+47-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\0a74bbc0170d0aacd5803552d3843462\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+48            android:exported="false" >
+48-->[com.google.firebase:firebase-firestore:21.4.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\61355ec616f0eb2668a126a30592a1de\jetified-firebase-firestore-21.4.0\AndroidManifest.xml:19:13-37
+49            <meta-data
+49-->[com.google.firebase:firebase-firestore:21.4.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\61355ec616f0eb2668a126a30592a1de\jetified-firebase-firestore-21.4.0\AndroidManifest.xml:20:13-22:85
+50                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+50-->[com.google.firebase:firebase-firestore:21.4.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\61355ec616f0eb2668a126a30592a1de\jetified-firebase-firestore-21.4.0\AndroidManifest.xml:21:17-111
+51                android:value="com.google.firebase.components.ComponentRegistrar" />
+51-->[com.google.firebase:firebase-firestore:21.4.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\61355ec616f0eb2668a126a30592a1de\jetified-firebase-firestore-21.4.0\AndroidManifest.xml:22:17-82
+52        </service>
+53
+54        <activity
+54-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\b40e8a8611b735163d3bb330b22a1aa3\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+55            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+55-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\b40e8a8611b735163d3bb330b22a1aa3\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+56            android:exported="false"
+56-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\b40e8a8611b735163d3bb330b22a1aa3\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+57            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+57-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\b40e8a8611b735163d3bb330b22a1aa3\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+58
+59        <provider
+59-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\0a74bbc0170d0aacd5803552d3843462\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+60            android:name="com.google.firebase.provider.FirebaseInitProvider"
+60-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\0a74bbc0170d0aacd5803552d3843462\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+61            android:authorities="com.example.gqbulk.firebaseinitprovider"
+61-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\0a74bbc0170d0aacd5803552d3843462\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+62            android:exported="false"
+62-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\0a74bbc0170d0aacd5803552d3843462\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+63            android:initOrder="100" />
+63-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\0a74bbc0170d0aacd5803552d3843462\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+64
+65        <meta-data
+65-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\c327a25527fe8ad932a73f8c660c7639\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+66            android:name="com.google.android.gms.version"
+66-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\c327a25527fe8ad932a73f8c660c7639\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+67            android:value="@integer/google_play_services_version" />
+67-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Yong Xin\.gradle\caches\transforms-2\files-2.1\c327a25527fe8ad932a73f8c660c7639\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+68    </application>
+69
+70</manifest>

@@ -25,7 +25,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-          btn=(Button)findViewById(R.id.Lbutton);
+        btn=(Button)findViewById(R.id.Lbutton);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,21 +43,17 @@ public class Login extends AppCompatActivity {
                             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                                 if (task.isSuccessful()) {
                                     for (QueryDocumentSnapshot document : task.getResult()) {
-                                        Log.d("GDQUID", "DocumentSnapshot successfully updated!"+document.getString("Password"));
-                                        String name=document.getString("Password");
-                                        Toast toast = Toast.makeText(getApplicationContext(),name,Toast.LENGTH_SHORT);
-                                        toast.show();
-                                        Intent myIntent = new Intent(getBaseContext(), bulkUI.class);
+                                        Log.d("GDQUID", "DocumentSnapshot successfully updated!" + document.getData());
+                                        String name = document.getString("Name");
+                                        Intent myIntent = new Intent(getBaseContext(), HomePage.class);
                                         startActivity(myIntent);
-                                }
+                                    }
 
                                 } else {
                                     Log.d("error", "Error getting documents: ", task.getException());
                                 }
                             }
                         });
-
-
             }
         });
     }

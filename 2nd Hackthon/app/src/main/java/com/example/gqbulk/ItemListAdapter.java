@@ -37,8 +37,9 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView nameTextView,priceTextView,originalPriceTextView,lblProduct;
+        private TextView nameTextView,priceTextView,originalPriceTextView,lblProduct,txtTimer;
         private final TextView txtCountDown;
+
         private ImageView ic;
         ImageView img;
         Button register;
@@ -52,7 +53,9 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
             txtCountDown=(TextView)itemView.findViewById(R.id.CountDown);
             lblProduct=(TextView)itemView.findViewById(R.id.txtProduct);
             register=(Button)itemView.findViewById(R.id.btnRegister);
-
+            txtTimer=(TextView)itemView.findViewById(R.id.txtTimer);
+            register.setVisibility(View.VISIBLE);
+            txtCountDown.setVisibility(View.VISIBLE);
             countDownStart();
             }
 
@@ -104,7 +107,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
                             long minutes = diff / (60 * 1000);
                             diff -= minutes * (60 * 1000);
                             long seconds = diff / 1000;
-                            holder.txtCountDown.setText("" + String.format("%02d", days+"days")+String.format("%02d", hours)+"hours Left");
+                            holder.txtTimer.setText("" + String.format("%02d", days+"days")+String.format("%02d", hours)+"hours Left");
 
                         }
                     } catch (Exception e) {
@@ -118,7 +121,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
         else if(position==2)
         {
             holder.img.setImageResource(R.drawable.shampoo);
-            final Handler handler = new Handler();
+             final Handler handler = new Handler();
             Runnable runnable = new Runnable() {
                 @Override
                 public void run() {
@@ -139,7 +142,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
                             long minutes = diff / (60 * 1000);
                             diff -= minutes * (60 * 1000);
                             long seconds = diff / 1000;
-                            holder.txtCountDown.setText("" + String.format("%02d", days+"days")+String.format("%02d", hours)+"hours Left");
+                            holder.txtTimer.setText("" + String.format("%02d", days+"days")+String.format("%02d", hours)+"hours Left");
 
                         }
                     } catch (Exception e) {
@@ -173,7 +176,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
                             long minutes = diff / (60 * 1000);
                             diff -= minutes * (60 * 1000);
                             long seconds = diff / 1000;
-                            holder.txtCountDown.setText("" + String.format("%02d", days+"days")+String.format("%02d", hours)+"hours Left");
+                            holder.txtTimer.setText("" + String.format("%02d", days+"days")+String.format("%02d", hours)+"hours Left");
 
                         }
                     } catch (Exception e) {
@@ -195,13 +198,13 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
         for(i=0;i<bulkList.get(position).getId().size();i++)
         {
             String j=String.valueOf(Integer.parseInt(bulkList.get(position).getTarget())-i);
-            holder.txtCountDown.setText("Register now to enjoy this fantastic deal!"+"\n"+j+" registration left");
+            holder.txtCountDown.setText("Register now to enjoy this fantastic deal!"+"\n"+j+" registration left"+"\n"+"Time Left: 15mins");
 
         }
         holder.register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                register(bulkList.get(position).product);
                 Log.e("Submit","You have successfully register! We will" +" notify you once again to confirm with your purchase later");
 
             }
@@ -224,7 +227,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 DocumentReference ref = db.collection("BulkProduct").document(document.getId());
-                                ref.update("Product", "lily");
+                                ref.update("Target", "19");
                                 Log.e("success", "success");
                             }
                         }
